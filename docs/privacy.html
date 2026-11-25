@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Echo Launcher - Privacy Policy</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; max-width: 780px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #111; }
+  h1 { margin-bottom: 0.2rem; } h2 { margin-top: 2rem; }
+  .meta { color: #555; } a { color: #0645ad; }
+  table { border-collapse: collapse; width: 100%; } td, th { border: 1px solid #ccc; padding: 0.4rem 0.6rem; text-align: left; vertical-align: top; }
+  code { background: #f2f2f2; padding: 0 0.25rem; }
+</style>
+</head>
+<body>
+<p><a href="index.html">Echo Launcher</a> · <a href="terms.html">Terms of Service</a></p>
+<h1>Privacy Policy</h1>
+<p class="meta">Effective date: November 25, 2026</p>
+
+<p>This Privacy Policy explains what information Echo Launcher ("Echo", "we", "us") handles and where it goes. The short version: <strong>Echo has no server and no telemetry. Your account information stays on your own computer, and we do not collect, receive, sell, or share it.</strong></p>
+
+<h2>1. Signing in with Microsoft</h2>
+<p>Echo uses Microsoft's official device-code sign-in. Echo shows you a short code, and you enter it, along with your Microsoft email and password, on Microsoft's own website. <strong>Echo never sees or stores your password.</strong></p>
+<p>After you sign in, Microsoft, Xbox Live, and Mojang give Echo the tokens it needs to start the game. Here is how Echo handles them:</p>
+<table>
+  <tr><th>Information</th><th>Where it is kept</th></tr>
+  <tr><td>Microsoft refresh token (lets Echo keep you signed in)</td><td>Only in your operating system's secure credential store on your device (Windows Credential Manager, macOS Keychain, or the Linux Secret Service). Never written to a plain file.</td></tr>
+  <tr><td>Minecraft access token</td><td>Only in memory while Echo is running. Not saved to disk.</td></tr>
+  <tr><td>Minecraft username and UUID</td><td>In a local file on your device (<code>config/accounts.json</code>) so Echo can list your accounts. These are already public in Minecraft.</td></tr>
+  <tr><td>Your email address, gamertag, password</td><td>Not stored by Echo.</td></tr>
+</table>
+<p>Account details and tokens are <strong>never written to Echo's logs</strong>, and the game command line shown inside Echo hides your token. None of this information is sent to us. We have no Echo server that stores accounts.</p>
+
+<h2>2. Information stored on your device</h2>
+<p>Echo saves its data in a folder on your computer (on Windows, <code>%APPDATA%\EchoLauncher</code>; on macOS, <code>~/Library/Application Support/EchoLauncher</code>; on Linux, <code>~/.local/share/EchoLauncher</code>). This includes game files, your instances, mods, worlds, settings, a local log file (<code>logs/launcher.log</code>, which never contains account data), your selected Echo cape, and, if you add one, your CurseForge API key. This data stays on your device. We cannot see it.</p>
+
+<h2>3. Services Echo connects to</h2>
+<p>To work, Echo connects directly from your computer to these third-party services. Like any internet connection, they can see your IP address and that the request came from Echo. Each one handles data under its own privacy policy:</p>
+<ul>
+  <li><strong>Microsoft and Xbox Live</strong> (sign-in): <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a></li>
+  <li><strong>Mojang / Minecraft services</strong> (game files, your profile and skin, skin uploads you choose to make): covered by the Microsoft Privacy Statement</li>
+  <li><strong>Modrinth</strong> (mod search and downloads): <a href="https://modrinth.com/legal/privacy">Modrinth Privacy Policy</a></li>
+  <li><strong>CurseForge</strong> (mod search and downloads, only if you add an API key): <a href="https://www.overwolf.com/legal/privacy/">Overwolf/CurseForge Privacy Policy</a></li>
+  <li><strong>Fabric and Quilt</strong> (mod loader files)</li>
+  <li><strong>Discord</strong> (only if you click a Discord link, which opens in your browser): <a href="https://discord.com/privacy">Discord Privacy Policy</a></li>
+</ul>
+<p>If you upload a skin, Echo sends the image file straight to Mojang's official skin service. Minecraft servers you join, and mods you install, may collect data on their own. We do not control them, and this policy does not cover them.</p>
+
+<h2>4. What we do not do</h2>
+<ul>
+  <li>We do not run analytics, tracking, advertising, or telemetry in Echo.</li>
+  <li>We do not sell, rent, or share your personal information.</li>
+  <li>We do not store your account on any server.</li>
+  <li>We do not read your files outside Echo's own folder, except folders of other launchers when you use the Import feature, and only to copy your instances and settings into Echo on your device.</li>
+</ul>
+
+<h2>5. Removing your data</h2>
+<p>To sign out, remove the account in Echo; this deletes its saved token from your credential store. To remove everything, uninstall Echo and delete its data folder listed above. You can also revoke Echo's access to your Microsoft account at any time at <a href="https://account.live.com/consent/Manage">account.live.com/consent/Manage</a>.</p>
+
+<h2>6. Children</h2>
+<p>Echo does not collect personal information from anyone, including children, because account data stays on the user's device. Children should use Echo with a parent's or guardian's permission. Microsoft accounts for children are subject to Microsoft's family and consent settings.</p>
+
+<h2>7. Community on Discord</h2>
+<p>If you join our Discord at <a href="https://discord.gg/D67qCTH7Mv">https://discord.gg/D67qCTH7Mv</a>, anything you post there is handled by Discord under its own policy and is visible to other members of the server.</p>
+
+<h2>8. Future features</h2>
+<p>We may later add online features, such as showing Echo cosmetics to other players or optional purchases. Those features may need to process some information on a server (for example, your Minecraft UUID and which cosmetic you chose). <strong>Before any such feature collects data, we will update this policy to explain exactly what is collected and why, and we will tell users in the launcher or on our Discord.</strong> Payment information, if purchases are ever added, would be handled by a third-party payment provider, not stored by us.</p>
+
+<h2>9. Security</h2>
+<p>We protect sign-in tokens by keeping them in your operating system's secure credential store and in memory, and by using encrypted (HTTPS) connections. No system is perfectly secure, so please also keep your computer and Microsoft account secure.</p>
+
+<h2>10. Changes to this policy</h2>
+<p>If we change this policy, we will update the effective date above. For important changes, we will also tell users in the launcher or on our Discord.</p>
+
+<h2>11. Contact</h2>
+<p>Questions about privacy: <a href="mailto:echo.launcher@yahoo.com">echo.launcher@yahoo.com</a>, or ask in our <a href="https://discord.gg/D67qCTH7Mv">Discord</a>.</p>
+</body>
+</html>
