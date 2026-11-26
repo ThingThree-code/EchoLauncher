@@ -15,7 +15,7 @@
 <body>
 <p><a href="terms.html">Terms of Service</a> · <a href="https://discord.gg/D67qCTH7Mv">Echo Discord</a></p>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective date: November 25, 2026</p>
+<p class="meta">Effective date: November 26, 2026</p>
 
 <p>This Privacy Policy explains what information Echo Launcher ("Echo", "we", "us") handles and where it goes. The short version: <strong>Echo has no server and no telemetry. Your account information stays on your own computer, and we do not collect, receive, sell, or share it.</strong></p>
 
@@ -29,29 +29,31 @@
   <tr><td>Minecraft username and UUID</td><td>In a local file on your device (<code>config/accounts.json</code>) so Echo can list your accounts. These are already public in Minecraft.</td></tr>
   <tr><td>Your email address, gamertag, password</td><td>Not stored by Echo.</td></tr>
 </table>
-<p>Account details and tokens are <strong>never written to Echo's logs</strong>, and the game command line shown inside Echo hides your token. None of this information is sent to us. We have no Echo server that stores accounts.</p>
+<p>Account details and tokens are <strong>never written to Echo's own launcher log</strong>, and the game command line shown inside Echo hides your token. None of this information is sent to us. We have no Echo server that stores accounts.</p>
 
 <h2>2. Information stored on your device</h2>
 <p>Echo saves its data in a folder on your computer (on Windows, <code>%APPDATA%\EchoLauncher</code>; on macOS, <code>~/Library/Application Support/EchoLauncher</code>; on Linux, <code>~/.local/share/EchoLauncher</code>). This includes game files, your instances, mods, worlds, settings, a local log file (<code>logs/launcher.log</code>, which never contains account data), your selected Echo cape, and, if you add one, your CurseForge API key. This data stays on your device. We cannot see it.</p>
+<p>Minecraft itself, and any mods you install, also write their own logs and crash reports inside your instance folders. Those files are created by the game, not by Echo, and may contain your Minecraft username, server addresses, or chat. They stay on your device unless you choose to share them, for example when asking for help on Discord. Please check them before sharing.</p>
 
 <h2>3. Services Echo connects to</h2>
-<p>To work, Echo connects directly from your computer to these third-party services. Like any internet connection, they can see your IP address and that the request came from Echo. Each one handles data under its own privacy policy:</p>
+<p>To work, Echo connects directly from your computer to these third-party services. Like any internet connection, they can see your IP address, and Echo identifies itself to them as "EchoLauncher" with its version number. Each one handles data under its own privacy policy:</p>
 <ul>
   <li><strong>Microsoft and Xbox Live</strong> (sign-in): <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a></li>
-  <li><strong>Mojang / Minecraft services</strong> (game files, your profile and skin, skin uploads you choose to make): covered by the Microsoft Privacy Statement</li>
+  <li><strong>Mojang / Minecraft services</strong> (game files, Java runtimes, your profile, skin and capes, skin uploads you choose to make): covered by the Microsoft Privacy Statement</li>
   <li><strong>Modrinth</strong> (mod search and downloads): <a href="https://modrinth.com/legal/privacy">Modrinth Privacy Policy</a></li>
   <li><strong>CurseForge</strong> (mod search and downloads, only if you add an API key): <a href="https://www.overwolf.com/legal/privacy/">Overwolf/CurseForge Privacy Policy</a></li>
-  <li><strong>Fabric and Quilt</strong> (mod loader files)</li>
+  <li><strong>Fabric and Quilt</strong> (mod loader version lists and files, from meta.fabricmc.net, maven.fabricmc.net and meta.quiltmc.org)</li>
   <li><strong>Discord</strong> (only if you click a Discord link, which opens in your browser): <a href="https://discord.com/privacy">Discord Privacy Policy</a></li>
 </ul>
-<p>If you upload a skin, Echo sends the image file straight to Mojang's official skin service. Minecraft servers you join, and mods you install, may collect data on their own. We do not control them, and this policy does not cover them.</p>
+<p>If you upload a skin, Echo sends the image file straight to Mojang's official skin service. Minecraft servers you join, and mods you install, may collect data on their own. We do not control them, are not responsible for their practices, and this policy does not cover them.</p>
+<p>Echo does not currently check for updates automatically or connect to PacksMC.</p>
 
 <h2>4. What we do not do</h2>
 <ul>
   <li>We do not run analytics, tracking, advertising, or telemetry in Echo.</li>
   <li>We do not sell, rent, or share your personal information.</li>
   <li>We do not store your account on any server.</li>
-  <li>We do not read your files outside Echo's own folder, except folders of other launchers when you use the Import feature, and only to copy your instances and settings into Echo on your device.</li>
+  <li>We do not read your files outside Echo's own folder, except folders of other launchers when you use the Import feature (only to copy your instances and settings into Echo on your device), files you choose yourself (such as a skin image), and a custom Java installation if you point Echo to one.</li>
 </ul>
 
 <h2>5. Removing your data</h2>
@@ -60,19 +62,22 @@
 <h2>6. Children</h2>
 <p>Echo does not collect personal information from anyone, including children, because account data stays on the user's device. Children should use Echo with a parent's or guardian's permission. Microsoft accounts for children are subject to Microsoft's family and consent settings.</p>
 
-<h2>7. Community on Discord</h2>
+<h2>7. Your rights</h2>
+<p>Depending on where you live (for example under the GDPR in the EU/UK or state laws in the US), you may have rights to access, correct, or delete personal information a service holds about you. Because Echo does not send your personal information to us, we hold none to provide or delete; you control it on your device as described in section 5 (Removing your data). For information held by Microsoft, Mojang, Modrinth, CurseForge or Discord, contact them directly. You can still contact us with any privacy question.</p>
+
+<h2>8. Community on Discord</h2>
 <p>If you join our Discord at <a href="https://discord.gg/D67qCTH7Mv">https://discord.gg/D67qCTH7Mv</a>, anything you post there is handled by Discord under its own policy and is visible to other members of the server.</p>
 
-<h2>8. Future features</h2>
+<h2>9. Future features</h2>
 <p>We may later add online features, such as showing Echo cosmetics to other players or optional purchases. Those features may need to process some information on a server (for example, your Minecraft UUID and which cosmetic you chose). <strong>Before any such feature collects data, we will update this policy to explain exactly what is collected and why, and we will tell users in the launcher or on our Discord.</strong> Payment information, if purchases are ever added, would be handled by a third-party payment provider, not stored by us.</p>
 
-<h2>9. Security</h2>
-<p>We protect sign-in tokens by keeping them in your operating system's secure credential store and in memory, and by using encrypted (HTTPS) connections. No system is perfectly secure, so please also keep your computer and Microsoft account secure.</p>
+<h2>10. Security</h2>
+<p>We protect sign-in tokens by keeping them in your operating system's secure credential store and in memory, and Echo's own connections use encrypted HTTPS. No system is perfectly secure, and we cannot guarantee security. Because your data is stored on your device, anyone or any malware with access to your computer or user account may be able to reach it; please keep your computer and Microsoft account secure.</p>
 
-<h2>10. Changes to this policy</h2>
+<h2>11. Changes to this policy</h2>
 <p>If we change this policy, we will update the effective date above. For important changes, we will also tell users in the launcher or on our Discord.</p>
 
-<h2>11. Contact</h2>
+<h2>12. Contact</h2>
 <p>Questions about privacy: <a href="mailto:echo.launcher@yahoo.com">echo.launcher@yahoo.com</a>, or ask in our <a href="https://discord.gg/D67qCTH7Mv">Discord</a>.</p>
 </body>
 </html>
